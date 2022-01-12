@@ -2,7 +2,7 @@ public class Tester {
 
 	public static void main(String[] args) {
 
-    SortingAlgorithms s1 = new SortingAlgorithms;
+    SortingAlgorithms s1 = new SortingAlgorithms();
     //create an int[] of length 100;
     //  private int[] arr = int[100];
     //									{x,y,z,....};
