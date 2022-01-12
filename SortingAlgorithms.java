@@ -23,9 +23,14 @@
 
 
 public class SortingAlgorithms {
-  private int[] arr = new int[100]; // MODIFY HERE
+  // private int[] array = new int[100]; // MODIFY HERE
+  private int[] array =  {95,85,89,69,76,84,86,65,52,86,46,65,45,59,76,66,22,1,91,86,14,6,68,31,57,50,90,80,8,87,42,76,48,35,91,73,50,9,56,8,76,17,64,3,30,99,5,26,4,24,44,92,63,84,48,58,56,33,13,31,10,90,13,48,24,93,64,60,49,84,76,69,48,12,81,61,58,9,19,34,61,34,58,89,4,78,55,58,30,58,73,36,11,55,14,60,63,48,53,41};
 
   public void bubbleSort(){
+	int[] arr = new int[array.length];
+	for (int i = 0;  i < array.length; i++){
+		arr[i] = array[i];
+	}
     int temp;
     int numSwaps = 0;
     int counter = -1; // start at anything that is not 0 to enter loop
@@ -57,6 +62,10 @@ public class SortingAlgorithms {
 
 
   public void insertionSort(){
+		int[] arr = new int[array.length];
+		for (int i = 0 ; i < array.length; i++){
+			arr[i] = array[i];
+		}
     int temp;
     int numSwaps = 0;
     int j = 0;
@@ -86,8 +95,11 @@ public class SortingAlgorithms {
     System.out.println("Number of swaps using Insertion Sort: " + numSwaps);
     System.out.println();
   }
-
   public void selectionSort(){
+	int[] arr = new int[array.length];
+	for (int i = 0 ; i < array.length; i++){
+		arr[i] = array[i];
+	}
     int temp;
     int min;
     int numSwaps = 0;
@@ -96,13 +108,15 @@ public class SortingAlgorithms {
       for (int j = i + 1; j < arr.length; j++){ // check minimum from current index since everything before is aprt of sorted portion
         if (arr[j] < arr[min]){
         min = j;
-        numSwaps++;
         }
       }
       // swapping in each loop
-      temp = arr[min];
-      arr[min] = arr[i];
-      arr[i] = temp;
+      if (min != i){
+		  temp = arr[min];
+		  arr[min] = arr[i];
+		  arr[i] = temp;
+		  numSwaps++;
+	}
 
     }
 
