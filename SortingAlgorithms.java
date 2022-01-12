@@ -43,11 +43,12 @@ public class SortingAlgorithms {
     }
 
     // handles printing
-    System.out.print("Sorted Array using Bubble Sort: [");
+    /*System.out.print("Sorted Array using Bubble Sort: [");
     for (int val : arr){
       System.out.print(val + " ");
     }
-    System.out.print("]");
+    System.out.print("]");*/
+
     System.out.println();
     System.out.println("Number of swaps using Bubble Sort: " + numSwaps);
     System.out.println();
@@ -73,11 +74,14 @@ public class SortingAlgorithms {
     System.out.println();
 
     // handles printing
+
+    /*
     System.out.print("Sorted Array using Insertion Sort: [");
     for (int val : arr){
       System.out.print(val + " ");
     }
     System.out.print("]");
+    */
     System.out.println();
     System.out.println("Number of swaps using Insertion Sort: " + numSwaps);
     System.out.println();
@@ -101,13 +105,15 @@ public class SortingAlgorithms {
       arr[i] = temp;
 
     }
-    
+
     // handles printing
+    /*
     System.out.print("Sorted Array using Selection Sort: [");
     for (int val : arr){
       System.out.print(val + " ");
     }
     System.out.print("]");
+    */
     System.out.println();
     System.out.println("Number of swaps using Selection Sort: " + numSwaps);
   }
