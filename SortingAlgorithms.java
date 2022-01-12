@@ -118,4 +118,4 @@ public class SortingAlgorithms {
     System.out.println("Number of swaps using Selection Sort: " + numSwaps);
   }
 
-}
+} // End Class
